@@ -23,24 +23,7 @@ JavaScript provides several non-primitive data types that allow for more complex
 - Date
 - RegExp (Regular Expressions)
 
-## Usage
 
-To use the examples provided in this repository, follow these steps:
-
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/yourusername/js-non-primitive-data-types.git
-    cd js-non-primitive-data-types
-    ```
-
-2. **Open the JavaScript File**:
-    Open the `index.js` file in your preferred code editor or IDE.
-
-3. **Run the Code**:
-    Execute the `index.js` file using Node.js or include it in your HTML file to run in a web browser.
-
-    ```bash
-    node index.js
     ```
 
 ## Examples
