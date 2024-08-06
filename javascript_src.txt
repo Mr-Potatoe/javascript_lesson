@@ -1,0 +1,6 @@
+github for learning javascript
+
+- https://github.com/manthanank/learn-javascript?tab=readme-ov-file#introduction
+
+-  https://github.com/Asabeneh/30-Days-Of-JavaScript?tab=readme-ov-file
+

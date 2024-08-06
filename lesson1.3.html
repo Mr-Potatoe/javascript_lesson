@@ -1,0 +1,127 @@
+<!-- Data Types -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        // Primitive Data Types
+
+        // Numbers
+        let age = 30; // Integer
+        let price = 99.99; // Floating-point number
+
+        // Strings
+        let greeting = "Hello, World!";
+        let userName = 'Alice';
+        let templateString = `Welcome, ${userName}! You are ${age} years old.`;
+
+        // Booleans
+        let isActive = true;
+        let isVerified = false;
+
+        // Null
+        let user = null; // Represents an absence of value
+
+        // Undefined
+        let address; // Variable is declared but not initialized
+
+        // Symbol
+        const uniqueId = Symbol('id');
+        const anotherId = Symbol('id');
+
+        console.log("Numbers:");
+        console.log("Age:", age); // 30
+        console.log("Price:", price); // 99.99
+
+        console.log("\nStrings:");
+        console.log("Greeting:", greeting); // "Hello, World!"
+        console.log("User Name:", userName); // "Alice"
+        console.log("Template String:", templateString); // "Welcome, Alice! You are 30 years old."
+
+        console.log("\nBooleans:");
+        console.log("Is Active:", isActive); // true
+        console.log("Is Verified:", isVerified); // false
+
+        console.log("\nNull:");
+        console.log("User:", user); // null
+
+        console.log("\nUndefined:");
+        console.log("Address:", address); // undefined
+
+        console.log("\nSymbols:");
+        console.log("Unique ID:", uniqueId); // Symbol(id)
+        console.log("Another ID:", anotherId); // Symbol(id)
+        console.log("Are symbols equal?", uniqueId === anotherId); // false
+    
+
+    </script>
+
+    <script>
+
+        // Non-primitive Data Types
+
+        // 1. Objects
+        let person = {
+            name: "Alice",
+            age: 30,
+            isActive: true,
+            greet: function() {
+                return `Hello, my name is ${this.name}!`;
+            }
+        };
+
+        console.log("Object:");
+        console.log("Name:", person.name); // "Alice"
+        console.log("Greeting:", person.greet()); // "Hello, my name is Alice!"
+
+        // 2. Arrays
+        let numbers = [1, 2, 3, 4, 5];
+        let mixedArray = [1, "text", true, null, { key: "value" }];
+
+        console.log("\nArray:");
+        console.log("Numbers Array:", numbers); // [1, 2, 3, 4, 5]
+        console.log("Mixed Array:", mixedArray); // [1, "text", true, null, { key: "value" }]
+        console.log("First Number:", numbers[0]); // 1
+
+        // Adding an item to the array
+        numbers.push(6);
+        console.log("Updated Numbers Array:", numbers); // [1, 2, 3, 4, 5, 6]
+
+        // 3. Functions
+        function add(a, b) {
+            return a + b;
+        }
+
+        const multiply = (x, y) => x * y;
+
+        console.log("\nFunctions:");
+        console.log("Addition Result:", add(5, 3)); // 8
+        console.log("Multiplication Result:", multiply(4, 5)); // 20
+
+        // 4. Date
+        let now = new Date();
+        let birthday = new Date(1990, 0, 1); // January is month 0
+
+        console.log("\nDate:");
+        console.log("Current Date and Time:", now); // Current date and time
+        console.log("Birthday:", birthday.toDateString()); // Date in human-readable format
+
+        // 5. RegExp (Regular Expressions)
+        let pattern = /hello/i; // Case-insensitive search for "hello"
+        let text = "Hello, world!";
+
+        console.log("\nRegExp:");
+        console.log("Does the text match the pattern?", pattern.test(text)); // true
+        console.log("Replaced Text:", text.replace(pattern, "Hi")); // "Hi, world!"
+
+                
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- 
+Variables
+
+Variables are containers for storing data values. In JavaScript, variables are declared using the var, let, or const keyword. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 42;
+        let str = "Hello, World!";
+        let bool = true;
+        let obj = { name: "Alice", age: 25 };
+        let arr = [1, 2, 3];
+        let func = function() { return "I am a function"; };
+        let und;
+        let nul = null;
+
+        console.log(typeof num);   // "number"
+        console.log(typeof str);   // "string"
+        console.log(typeof bool);  // "boolean"
+        console.log(typeof obj);   // "object"
+        console.log(typeof arr);   // "object" (Arrays are also objects in JavaScript)
+        console.log(typeof func);  // "function"
+        console.log(typeof und);   // "undefined"
+        console.log(typeof nul);   // "object" (null is considered an object, which is a known quirk in JavaScript)
+
+
+        // for arrays and objects, use Array.isArray()
+        console.log(Array.isArray(arr));  // true
+        console.log(Array.isArray(obj));  // false
+
+
+
+    </script>
+</body>
+</html>
