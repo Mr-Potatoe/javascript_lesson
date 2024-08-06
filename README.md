@@ -1,6 +1,3 @@
-Certainly! Below is a sample `README.md` for a JavaScript project that includes examples of non-primitive data types. You can customize it further based on your specific project details.
-
----
 
 # JavaScript Non-Primitive Data Types Example
 
